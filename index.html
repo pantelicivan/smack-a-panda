@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv="Content-Language" content="en" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+	<title> Smack-a-Panda!</title>
+
+	
+</head>
+
+<body>
+
+	<h1> Smack-a-Panda! <span class="rezultat">0</span></h1>
+	<h3> Choose a level :</h3>
+	<div class="container">
+		<div class ="row">
+
+			<div class="col-md-4">
+				<div class ="nivo easy">
+					<h2 onClick="startEasy()" id="easyID">Easy :(</h2>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class = "nivo normal">
+				<h2 onClick="startNormal()" id="normalID">Normal :)</h2>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class = "nivo expert">
+				<h2 onClick="startExpert()" id="expertID">Expert ! :D</h2>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	
+
+	
+	<div class="igrica">
+
+		<div class = "zbun zbun1">
+			<div class="panda"></div>
+		</div>
+
+		<div class = "zbun zbun2">
+			<div class="panda"></div>
+		</div>
+
+		<div class = "zbun zbun3">
+			<div class="panda"></div>
+		</div>
+
+		<div class = "zbun zbun4">
+			<div class="panda"></div>
+		</div>
+
+		<div class = "zbun zbun5">
+			<div class="panda"></div>
+		</div>
+
+		<div class = "zbun zbun6">
+			<div class="panda"></div>
+		</div>
+		
+	</div>
+
+	<script>
+		const zbunje = document.querySelectorAll('.zbun');
+		const tabla = document.querySelector('.rezultat');
+		const pande = document.querySelectorAll('.panda');
+		const nivoi = document.querySelectorAll('.nivo');		
+	
+
+	pande.forEach(panda => panda.addEventListener('click', spusti));
+</script>
+</body>
+
+
+</html>
